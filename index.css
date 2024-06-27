@@ -1,0 +1,144 @@
+html {
+    font: 500 1.25em/1.5 "Poiret One", sans-serif;
+    font-stretch: wider;
+    letter-spacing: .025rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Spirax", sans-serif;
+    font-weight: bolder;
+    line-height: 5rem;
+    color: rgb(180, 0, 0);
+    text-shadow:0 0 1px transparent;
+  }
+  
+  h1 {
+    font-size: 5rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  #main-nav {
+    background: rgba(20, 0, 0, 0.8);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    overflow: auto;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font: 600 1.5rem "Spirax", sans-serif;
+    margin: .1rem 1rem;
+    color: #fff;
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+  }
+  
+  .nav-list a:hover {
+      text-decoration: underline;
+  }
+  
+  .page-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .flex-col > .start {
+    align-self: self-start;
+  }
+  
+  .flex-col > .end {
+    align-self: flex-end;
+  }
+  
+  .flex-col > .center {
+    align-self: center;
+  }
+  
+  .bg-darkred {
+    background: rgb(128, 0, 0, 0.9);
+    color: #fff;
+  }
+  
+  .bg-black {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+  }
+  
+  .box {
+    padding: .5rem 2.5rem;
+    margin: 1rem 0;
+  }
+  
+  .box table {
+    width: 100%;
+  }
+  
+  .box tr td:first-child {
+    padding-right: 3rem;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+  }
+  
+  .full-page {
+    padding-top: 8rem;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    scroll-snap-align: start;
+  }
+  
+  #page-hot {
+    background-image: url("assets/hot.jpg");
+  }
+  #page-juicy {
+    background-image: url("assets/juicy.jpg");
+  }
+  #page-cosy {
+    background-image: url("assets/cosy.jpg");
+  }
+  
